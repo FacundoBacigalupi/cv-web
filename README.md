@@ -1,16 +1,30 @@
-# React + Vite
+# CV Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal bilingual CV website developed with React and Vite.
 
-Currently, two official plugins are available:
+The project is a single-page web application that presents my professional profile, skills, work experience, university projects, personal projects, and contact information. It includes internal navigation, a language switch between Spanish and English, responsive design, and a modern purple/blue gradient interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Demo
 
-## React Compiler
+https://facundobacigalupi.github.io/cv-web/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Single-page CV website
+- Spanish / English language switch
+- Smooth scroll navigation
+- Responsive layout
+- Contact section with email, phone, location, LinkedIn, and GitHub
+- Project links to GitHub repositories
+- Modern UI using Tailwind CSS
+- Built with React and Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies
+
+- React
+- Vite
+- JavaScript
+- Tailwind CSS
+- lucide-react
+- GitHub Pages
+- GitHub Actions
