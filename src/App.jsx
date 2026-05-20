@@ -1,11 +1,11 @@
 import React, { useMemo, useState } from "react";
 import { Mail, MapPin, Phone, ExternalLink, Menu, X, Code2, Link } from "lucide-react";
+import profilePhoto from "./assets/facundo.jpg";
 
 const content = {
   es: {
     langLabel: "EN",
     nav: [
-      { id: "intro", label: "Introducción" },
       { id: "skills", label: "Habilidades" },
       { id: "experience", label: "Experiencia laboral" },
       { id: "university", label: "Proyectos de universidad" },
@@ -14,7 +14,7 @@ const content = {
     ],
     heroSubtitle: "Analista en Computación · Estudiante avanzado de Ingeniería en Computación",
     heroText:
-      "Desarrollador con experiencia en desarrollo, mantenimiento y testing de aplicaciones backend y web. Me interesa construir soluciones robustas, mantenibles y alineadas con las necesidades del usuario, combinando buenas prácticas de desarrollo con capacidad de aprendizaje y adaptación a nuevos entornos.",
+      "Tengo experiencia en desarrollo, mantenimiento y testing de aplicaciones backend y web. He trabajado con tecnologías como Java, Spring Boot, Angular, TypeScript, MongoDB, MySQL, PostgreSQL, servicios REST/SOAP y herramientas de testing automatizado. Me interesa construir soluciones robustas, mantenibles y alineadas con las necesidades del usuario, combinando buenas prácticas de desarrollo con capacidad de aprendizaje y adaptación a nuevos entornos. Además, utilizo herramientas de IA generativa como apoyo para el análisis de código, debugging, documentación técnica y aprendizaje de nuevas tecnologías.",
     sections: {
       intro: "Introducción",
       skills: "Habilidades",
@@ -110,7 +110,6 @@ const content = {
   en: {
     langLabel: "ES",
     nav: [
-      { id: "intro", label: "Introduction" },
       { id: "skills", label: "Skills" },
       { id: "experience", label: "Work experience" },
       { id: "university", label: "University projects" },
@@ -119,7 +118,7 @@ const content = {
     ],
     heroSubtitle: "Computer Analyst · Advanced Computer Engineering Student",
     heroText:
-      "Developer with experience in development, maintenance, and testing of backend and web applications. I am interested in building robust, maintainable solutions aligned with user needs, combining good development practices with strong learning ability and adaptability to new environments.",
+      "I have experience in development, maintenance, and testing of backend and web applications. I have worked with technologies such as Java, Spring Boot, Angular, TypeScript, MongoDB, MySQL, PostgreSQL, REST/SOAP services, and automated testing tools. I am interested in building robust, maintainable solutions aligned with user needs, combining good development practices with strong learning ability and adaptability to new environments. I also use generative AI tools to support code analysis, debugging, technical documentation, and learning new technologies.",
     sections: {
       intro: "Introduction",
       skills: "Skills",
@@ -321,21 +320,25 @@ export default function CVWebsite() {
       <section id="intro" className="scroll-mt-28 pb-12 pt-16 md:pb-20 md:pt-24">
         <div className="mx-auto grid max-w-6xl gap-10 px-5 lg:grid-cols-[1.25fr_0.75fr] lg:items-center">
           <div>
-            <div className="mb-5 inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-blue-50 backdrop-blur">
-              {t.heroSubtitle}
-            </div>
             <h1 className="max-w-4xl text-5xl font-black tracking-tight text-white md:text-7xl">
               {t.contact.name}
             </h1>
+            <p className="mt-4 text-lg font-semibold text-blue-100 md:text-xl">
+              {t.heroSubtitle}
+            </p>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-blue-50/85 md:text-xl">
               {t.heroText}
             </p>
           </div>
 
           <aside className="rounded-[2rem] border border-white/15 bg-white/10 p-6 shadow-2xl shadow-blue-950/30 backdrop-blur-xl">
-            <div className="mb-6 h-28 rounded-[1.5rem] bg-gradient-to-br from-purple-400 via-blue-400 to-cyan-300 p-px">
-              <div className="flex h-full items-center justify-center rounded-[1.45rem] bg-blue-950/60 text-4xl font-black">
-                FB
+            <div className="mb-6 flex justify-center">
+              <div className="rounded-full bg-gradient-to-br from-purple-400 via-blue-400 to-cyan-300 p-1 shadow-xl shadow-blue-950/30">
+                <img
+                  src={profilePhoto}
+                  alt="Facundo Bacigalupi"
+                  className="h-36 w-36 rounded-full object-cover"
+                />
               </div>
             </div>
             <div className="space-y-4 text-blue-50/90">
@@ -352,16 +355,6 @@ export default function CVWebsite() {
           </aside>
         </div>
       </section>
-
-      <Section id="intro-details" title={t.sections.intro}>
-        <div className="grid gap-5 md:grid-cols-3">
-          {t.introCards.map((card) => (
-            <article key={card} className="rounded-3xl border border-white/15 bg-white/10 p-6 text-blue-50/90 shadow-xl shadow-blue-950/20 backdrop-blur">
-              {card}
-            </article>
-          ))}
-        </div>
-      </Section>
 
       <Section id="skills" title={t.sections.skills}>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -420,8 +413,7 @@ export default function CVWebsite() {
             <article key={project.title} className="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-xl shadow-blue-950/20 backdrop-blur">
               <div className="mb-3 flex items-start justify-between gap-4">
                 <h3 className="text-xl font-bold text-white">{project.title}</h3>
-                <a href={project.link} className="rounded-full bg-white/10 p-2 text-blue-50 transition hover:bg-white/20" aria-label="Project link">
-                  <ExternalLink size={18} />
+                <a href={project.link} target="_blank" rel="noreferrer" className="rounded-full bg-white/10 p-2 text-blue-50 transition hover:bg-white/20" aria-label="Project link">                  <ExternalLink size={18} />
                 </a>
               </div>
               <p className="mb-5 leading-7 text-blue-50/85">{project.description}</p>
@@ -465,8 +457,7 @@ export default function CVWebsite() {
           <p>© {new Date().getFullYear()} {t.contact.name}. {t.footerText}</p>
           <div className="flex gap-3">
             <a href={`mailto:${t.contact.email}`} className="rounded-full bg-white/10 p-3 transition hover:bg-white/20" aria-label="Email"><Mail size={18} /></a>
-            <a href="#" className="rounded-full bg-white/10 p-3 transition hover:bg-white/20" aria-label="LinkedIn"><Link size={18} /></a>
-            <a href="#" className="rounded-full bg-white/10 p-3 transition hover:bg-white/20" aria-label="Portfolio"><Code2 size={18} /></a>
+            <a href={t.contact.linkedinUrl} target="_blank" rel="noreferrer" className="rounded-full bg-white/10 p-3 transition hover:bg-white/20" aria-label="LinkedIn"><Link size={18} /></a>
           </div>
         </div>
       </footer>
