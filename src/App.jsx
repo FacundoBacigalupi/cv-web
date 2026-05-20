@@ -5,6 +5,8 @@ import profilePhoto from "./assets/facundo.jpg";
 const content = {
   es: {
     langLabel: "EN",
+    cvDownloadLabel: "Descargar CV",
+    cvFile: "cv-facundo-bacigalupi-es.pdf",
     nav: [
       { id: "skills", label: "Habilidades" },
       { id: "experience", label: "Experiencia laboral" },
@@ -109,6 +111,8 @@ const content = {
   },
   en: {
     langLabel: "ES",
+    cvDownloadLabel: "Download CV",
+    cvFile: "cv-facundo-bacigalupi-en.pdf",
     nav: [
       { id: "skills", label: "Skills" },
       { id: "experience", label: "Work experience" },
@@ -272,6 +276,13 @@ export default function CVWebsite() {
           </nav>
 
           <div className="flex items-center gap-3">
+            <a
+              href={`${import.meta.env.BASE_URL}${t.cvFile}`}
+              download
+              className="hidden rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-bold text-white transition hover:bg-white/20 md:inline-flex"
+            >
+              {t.cvDownloadLabel}
+            </a>
             <button
               onClick={() => setLanguage(language === "es" ? "en" : "es")}
               className="relative flex h-11 w-24 items-center rounded-full border border-white/15 bg-white/10 p-1 text-sm font-bold text-white"
