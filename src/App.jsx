@@ -16,7 +16,7 @@ const content = {
     ],
     heroSubtitle: "Analista en Computación · Estudiante avanzado de Ingeniería en Computación",
     heroText:
-      "Tengo experiencia en desarrollo, mantenimiento y testing de aplicaciones backend y web. He trabajado con tecnologías como Java, Spring Boot, Angular, TypeScript, MongoDB, MySQL, PostgreSQL, servicios REST/SOAP y herramientas de testing automatizado. Me interesa construir soluciones robustas, mantenibles y alineadas con las necesidades del usuario, combinando buenas prácticas de desarrollo con capacidad de aprendizaje y adaptación a nuevos entornos. Además, utilizo herramientas de IA generativa como apoyo para el análisis de código, debugging, documentación técnica y aprendizaje de nuevas tecnologías.",
+      "Analista en Computación y estudiante avanzado de Ingeniería en Computación en la Universidad de la República. Soy desarrollador de software con experiencia en backend, desarrollo web, mantenimiento de sistemas y testing automatizado, trabajando principalmente con Java, Spring Boot, Angular, TypeScript, bases de datos SQL/NoSQL y servicios REST/SOAP. Me interesa construir software práctico, entender sistemas existentes y mejorar el código para que sea más claro, mantenible y útil para los usuarios. Me considero una persona curiosa, persistente y adaptable, con interés en aprender nuevas tecnologías aplicándolas en proyectos reales. También utilizo herramientas de IA generativa como apoyo para debugging, análisis de código, documentación técnica y aprendizaje, revisando y validando los resultados como parte de mi proceso de desarrollo.",
     sections: {
       intro: "Introducción",
       skills: "Habilidades",
@@ -41,12 +41,13 @@ const content = {
       "Interés por soluciones mantenibles, escalables y centradas en el usuario.",
     ],
     skills: [
-      { title: "Lenguajes", values: ["Java", "Python", "C", "C++", "JavaScript", "TypeScript", "SQL"] },
-      { title: "Backend", values: ["Spring Boot", "Spring Framework", "REST APIs", "SOAP", "Java EE", "Servlets", "JSP"] },
-      { title: "Frontend", values: ["React", "Angular", "HTML5", "CSS3", "Tailwind CSS", "Swing"] },
-      { title: "Bases de datos", values: ["MongoDB", "MySQL", "PostgreSQL"] },
-      { title: "Testing y QA", values: ["Selenium", "Cucumber", "TDD", "Postman"] },
-      { title: "Herramientas", values: ["Git", "Kafka", "Tomcat", "Vite"] },
+      { title: "Lenguajes", values: ["Java", "Python", "C", "C++", "JavaScript", "TypeScript", "SQL", "Dart"] },
+      { title: "Backend", values: ["Spring Boot", "Spring Framework", "APIs REST", "SOAP", "Java EE", "Servlets", "JSP", "JWT", "WebSocket"] },
+      { title: "Frontend / Mobile", values: ["React", "Angular", "Flutter", "HTML5", "CSS3", "Tailwind CSS", "Vite"] },
+      { title: "Bases de datos", values: ["PostgreSQL", "MySQL", "MongoDB", "SQLite"] },
+      { title: "Testing y QA", values: ["Selenium", "Cucumber", "TDD", "Postman", "JUnit"] },
+      { title: "Herramientas", values: ["Git", "Docker", "Maven", "Kafka", "Tomcat"] },
+      { title: "IA y productividad", values: ["TensorFlow Lite", "uso aplicado de IA para desarrollo, debugging, documentación y aprendizaje"] },
     ],
     experience: [
       {
@@ -54,11 +55,11 @@ const content = {
         place: "GEOCOM Uruguay",
         period: "07/2022 — 01/2024",
         points: [
-          "Participación en desarrollo, mantenimiento y testing de software en proyectos backend, web y de automatización de pruebas.",
-          "Mantenimiento y evolución de subsistemas de promociones para aplicaciones de ventas y finanzas usando Java 6 y servicios SOAP.",
-          "Implementación de pruebas automatizadas para sistemas de punto de venta utilizando Java 8 y Cucumber.",
-          "Desarrollo de microservicios de contabilidad y reportes con Spring Framework, MongoDB, Kafka y servicios REST, aplicando TDD.",
-          "Desarrollo y mantenimiento de funcionalidades frontend con Angular y TypeScript integradas con servicios backend.",
+          "Participé en el desarrollo, mantenimiento y testing de software en proyectos backend, web y de automatización de pruebas.",
+          "Trabajé en el mantenimiento y evolución de subsistemas de promociones para aplicaciones de ventas y finanzas, corrigiendo errores e incorporando nuevas funcionalidades con Java 6 y servicios SOAP.",
+          "Implementé pruebas automatizadas para sistemas de punto de venta utilizando Java 8 y Cucumber, contribuyendo a validar flujos críticos del negocio.",
+          "Participé en el desarrollo de microservicios de contabilidad y reportes con Spring Framework, MongoDB, Kafka y servicios REST, aplicando prácticas de TDD.",
+          "Desarrollé y mantuve funcionalidades frontend con Angular y TypeScript integradas con servicios backend, y automaticé pruebas para un sitio web de contabilidad utilizando Java, Spring Boot, Selenium y Cucumber.",
         ],
       },
     ],
@@ -94,17 +95,81 @@ const content = {
     ],
     personalProjects: [
       {
+        title: "Página web CV bilingüe",
+        description:
+          "Desarrollo de una página web personal de una sola página utilizando React y Vite. Implementación de navegación interna con scroll suave, cambio de idioma Español/Inglés, diseño responsive, enlaces a proyectos y sección de contacto. Uso de Tailwind CSS, lucide-react, GitHub Pages y GitHub Actions para construir y desplegar una interfaz moderna de presentación profesional.",
+        tags: ["React", "Vite", "Tailwind CSS", "i18n"],
+        link: "https://github.com/FacundoBacigalupi/cv-web"
+      },
+      {
         title: "Juego Scoundrel en consola",
         description:
-          "Proyecto personal en Python orientado a practicar diseño modular y programación orientada a objetos. Implementa la lógica de un juego solitario de cartas, separación de responsabilidades y visualización de cartas desde consola.",
-        tags: ["Python", "Arquitectura", "Consola", "POO"],
+          "Desarrollo de una implementación en Python del juego solitario de cartas Scoundrel, ejecutado desde consola. Implementación de mecánicas de exploración de habitaciones, combate contra monstruos, uso de pociones, equipamiento de armas y condiciones de victoria/derrota. Diseño de una arquitectura modular separando cartas, mazo, jugador, lógica de juego e interfaz de consola.",
+        tags: ["Python", "POO", "Arquitectura", "Consola"],
         link: "https://github.com/FacundoBacigalupi/scoundrel"
       },
       {
-        title: "Página web CV bilingüe",
+        title: "Clear the Dungeon",
         description:
-          "Sitio personal de una sola página desarrollado con React y Vite. Incluye navegación interna con scroll suave, cambio de idioma ES/EN, diseño responsive, componentes reutilizables y estilos con Tailwind CSS.",        tags: ["React", "UI", "Responsive", "i18n"],
-        link: "https://github.com/FacundoBacigalupi/cv-web"
+          "Desarrollo de un juego de cartas single-player en Godot 4 basado en la limpieza táctica de un dungeon. Implementación de cartas de monstruos, cartas de poder, Jokers, layouts alternativos, condiciones de victoria/derrota, sistema de daño y variantes opcionales de reglas. Trabajo sobre interfaz gráfica, estados de juego, manejo de turnos, lógica de selección de cartas y exportación para Windows.",
+        tags: ["Godot", "C#", "Game Dev", "Táctico"],
+        link: "#"
+      },
+      {
+        title: "uconvert",
+        description:
+          "Desarrollo de una herramienta CLI local en Python para conversión y procesamiento de archivos. Implementación de funcionalidades para convertir imágenes, documentos, PDFs, audio/video, ebooks y datos GIS mediante integración con herramientas externas como Pillow, Pandoc, Typst, FFmpeg, GDAL, Calibre, Ghostscript, ImageMagick y qpdf. Soporte para instalación local o uso mediante Docker, junto con comandos de conversión por archivo y procesamiento por lotes.",
+        tags: ["Python", "CLI", "Docker", "Conversión"],
+        link: "#"
+      },
+      {
+        title: "Smart Photo Editor",
+        description:
+          "Desarrollo de un editor de fotos web basado en canvas, orientado a desktop y mobile. Implementación de canvas con capas, historial de cambios, zoom, paneo, pincel, borrador, formas, texto, relleno, cuentagotas, selección de píxeles, recorte, filtros y exportación con área seleccionable. Integración de frontend en React con Fabric.js y backend en Express, con soporte para edición con IA, múltiples proveedores, temas visuales y diez idiomas.",
+        tags: ["React", "Express", "Canvas", "Fabric.js"],
+        link: "#"
+      },
+      {
+        title: "Mi Stock",
+        description:
+          "Desarrollo de una aplicación móvil de gestión de inventario y stock para Android utilizando Flutter. Implementación de alta, edición y eliminación de productos con múltiples fotos, escaneo de códigos de barras, movimientos de stock, historial, ventas, carrito de compras, reportes en PDF/XLS y dashboard. Integración de SQLite, Riverpod, Material 3, internacionalización y búsqueda visual offline mediante TensorFlow Lite con MobileNet V3 Small.",
+        tags: ["Flutter", "Android", "SQLite", "TensorFlow Lite"],
+        link: "#"
+      },
+      {
+        title: "Download Manager",
+        description:
+          "Desarrollo de una aplicación desktop en Python y PySide6 para descargar archivos desde listas de URLs. Implementación de carga de enlaces desde archivos links.txt o JSON, agregado manual de URLs, descargas concurrentes configurables, pausa, reanudación, reintentos y verificación SHA256. Uso de SQLite para historial de descargas, detección de duplicados, configuración persistente y organización de la cola de descarga.",
+        tags: ["Python", "PySide6", "Desktop", "SQLite"],
+        link: "#"
+      },
+      {
+        title: "CipherChat",
+        description:
+          "Desarrollo de un prototipo educativo de mensajería cifrada de extremo a extremo. Implementación de frontend en React y TypeScript, backend en Spring Boot 3 con Java 21, autenticación JWT, PostgreSQL, Flyway, Spring Data JPA, WebSocket/STOMP y despliegue local con Docker Compose. Soporte para múltiples dispositivos por usuario, generación de claves en el navegador, almacenamiento local de claves privadas en IndexedDB, envío de mensajes cifrados por dispositivo, chats directos y grupales, verificación de identidad y restauración de historial cifrado.",
+        tags: ["React", "Spring Boot", "WebSocket", "Criptografía"],
+        link: "#"
+      },
+      {
+        title: "HomeCinema",
+        description:
+          "Desarrollo de un servidor multimedia personal para red LAN con interfaz tipo streaming. Implementación de backend en Spring Boot, frontend en React y TypeScript, base de datos SQLite, migraciones con Flyway, integración con TMDb y reproducción de video mediante HLS usando FFmpeg. Soporte para escaneo de biblioteca local, búsqueda de catálogo, guardado de progreso de reproducción, generación de manifiestos HLS, modo portable en Windows y navegación compatible con browser y Android TV.",
+        tags: ["Spring Boot", "React", "FFmpeg", "HLS"],
+        link: "#"
+      },
+      {
+        title: "DashForge 3D",
+        description:
+          "Desarrollo de un juego 3D tipo obstacle-runner construido en C11 con OpenGL 3.3 Core. Implementación de cinco niveles oficiales, editor de niveles con guardado/carga, niveles personalizados, exportación mediante archivos .dash, HUD con barra de progreso y tres modos de cámara. Uso de GLFW, GLAD, cglm, stb_image, stb_easy_font, CMake y Ninja, con builds Debug y Release para Windows.",
+        tags: ["C11", "OpenGL", "Game Dev", "3D"],
+        link: "#"
+      },
+      {
+        title: "Rubik's Cube 3D",
+        description:
+          "Desarrollo de un juego 3D de Rubik's Cube en Unity 6. Implementación de un cubo 3x3x3 con 27 cubies individuales, rotación de cámara con middle mouse, detección de stickers mediante raycasting y giros de capas con click y arrastre. Desarrollo de funcionalidades de shuffle con temporizador, solve mediante reproducción inversa del historial de movimientos y detección automática de cubo resuelto.",
+        tags: ["Unity", "C#", "Game Dev", "3D"],
+        link: "#"
       },
     ],
     footerText: "Disponible para oportunidades de desarrollo de software, backend, web y proyectos técnicos.",
@@ -122,7 +187,7 @@ const content = {
     ],
     heroSubtitle: "Computer Analyst · Advanced Computer Engineering Student",
     heroText:
-      "I have experience in development, maintenance, and testing of backend and web applications. I have worked with technologies such as Java, Spring Boot, Angular, TypeScript, MongoDB, MySQL, PostgreSQL, REST/SOAP services, and automated testing tools. I am interested in building robust, maintainable solutions aligned with user needs, combining good development practices with strong learning ability and adaptability to new environments. I also use generative AI tools to support code analysis, debugging, technical documentation, and learning new technologies.",
+      "Computer Analyst and advanced Computer Engineering student at Universidad de la República. I am a software developer with experience in backend, web development, maintenance, and automated testing, mainly working with Java, Spring Boot, Angular, TypeScript, SQL/NoSQL databases, and REST/SOAP services. I enjoy understanding how systems work from the inside, improving existing codebases, and building practical solutions that are clear, maintainable, and useful for real users. Through both professional experience and personal projects, I have worked across backend services, frontend interfaces, mobile applications, desktop tools, and local automation. I consider myself curious, persistent, and adaptable. I like learning new technologies by applying them in real projects, solving concrete problems, and improving step by step. I also use generative AI tools as support for debugging, code analysis, technical documentation, and learning, while always reviewing, testing, and adapting the results myself.",
     sections: {
       intro: "Introduction",
       skills: "Skills",
@@ -147,12 +212,13 @@ const content = {
       "Interest in maintainable, scalable, user-centered solutions.",
     ],
     skills: [
-      { title: "Languages", values: ["Java", "Python", "C", "C++", "JavaScript", "TypeScript", "SQL"] },
-      { title: "Backend", values: ["Spring Boot", "Spring Framework", "REST APIs", "SOAP", "Java EE", "Servlets", "JSP"] },
-      { title: "Frontend", values: ["React", "Angular", "HTML5", "CSS3", "Tailwind CSS", "Swing"] },
-      { title: "Databases", values: ["MongoDB", "MySQL", "PostgreSQL"] },
-      { title: "Testing and QA", values: ["Selenium", "Cucumber", "TDD", "Postman"] },
-      { title: "Tools", values: ["Git", "Kafka", "Tomcat", "Vite"] },
+      { title: "Languages", values: ["Java", "Python", "C", "C++", "JavaScript", "TypeScript", "SQL", "Dart"] },
+      { title: "Backend", values: ["Spring Boot", "Spring Framework", "REST APIs", "SOAP", "Java EE", "Servlets", "JSP", "JWT", "WebSocket"] },
+      { title: "Frontend / Mobile", values: ["React", "Angular", "Flutter", "HTML5", "CSS3", "Tailwind CSS", "Vite"] },
+      { title: "Databases", values: ["PostgreSQL", "MySQL", "MongoDB", "SQLite"] },
+      { title: "Testing and QA", values: ["Selenium", "Cucumber", "TDD", "Postman", "JUnit"] },
+      { title: "Tools", values: ["Git", "Docker", "Maven", "Kafka", "Tomcat"] },
+      { title: "AI and Productivity", values: ["TensorFlow Lite", "applied use of AI tools for development, debugging, documentation and learning"] },
     ],
     experience: [
       {
@@ -160,11 +226,11 @@ const content = {
         place: "GEOCOM Uruguay",
         period: "07/2022 — 01/2024",
         points: [
-          "Participated in software development, maintenance, and testing across backend, web, and test automation projects.",
-          "Maintained and evolved promotion subsystems for sales and finance applications using Java 6 and SOAP services.",
-          "Implemented automated tests for point-of-sale systems using Java 8 and Cucumber.",
+          "Participated in software development, maintenance, and testing for backend, web, and test automation projects.",
+          "Worked on the maintenance and evolution of promotion subsystems for sales and finance applications, fixing bugs and implementing new features using Java 6 and SOAP services.",
+          "Implemented automated tests for point-of-sale systems using Java 8 and Cucumber, helping validate critical business flows.",
           "Developed accounting and reporting microservices using Spring Framework, MongoDB, Kafka, and REST services, applying TDD practices.",
-          "Developed and maintained frontend features with Angular and TypeScript integrated with backend services.",
+          "Contributed to frontend development with Angular and TypeScript, and to web test automation using Java, Spring Boot, Selenium, and Cucumber.",
         ],
       },
     ],
@@ -200,16 +266,81 @@ const content = {
     ],
     personalProjects: [
       {
-        title: "Console Scoundrel Game",
+        title: "Bilingual CV Website",
         description:
-          "Personal Python project focused on modular design and object-oriented programming. It implements the logic of a solitaire card game, clear responsibility separation, and card visualization through the console.",        link: "#",
+          "Single-page personal website built with React and Vite. Implemented smooth internal navigation, Spanish/English language switching, responsive design, project links, and a contact section. Used Tailwind CSS, lucide-react, GitHub Pages, and GitHub Actions to build and deploy a modern professional portfolio interface.",
+        tags: ["React", "Vite", "Tailwind CSS", "i18n"],
+        link: "https://github.com/FacundoBacigalupi/cv-web"
+      },
+      {
+        title: "Scoundrel Console Game",
+        description:
+          "Developed a Python implementation of the solitaire card game Scoundrel, executed from the console. Implemented room exploration mechanics, combat against monsters, potion usage, weapon equipment, and win/loss conditions. Designed a modular architecture separating cards, deck handling, player logic, game rules, and the console interface.",
+        tags: ["Python", "OOP", "Architecture", "Console"],
         link: "https://github.com/FacundoBacigalupi/scoundrel"
       },
       {
-        title: "Bilingual CV Website",
+        title: "Clear the Dungeon",
         description:
-          "Single-page personal website built with React and Vite. It includes internal smooth-scroll navigation, ES/EN language switching, responsive layout, reusable components, and styling with Tailwind CSS.",        tags: ["React", "UI", "Responsive", "i18n"],
-        link: "https://github.com/FacundoBacigalupi/cv-web"
+          "Developed a single-player card game in Godot 4 based on tactical dungeon clearing. Implemented monster cards, power cards, Jokers, alternative layouts, win/loss conditions, damage handling, and optional rule variants. Worked on the graphical interface, game states, turn handling, card selection logic, and Windows export.",
+        tags: ["Godot", "C#", "Game Dev", "Tactical"],
+        link: "#"
+      },
+      {
+        title: "uconvert",
+        description:
+          "Developed a local Python CLI tool for file conversion and processing. Implemented features for converting images, documents, PDFs, audio/video files, ebooks, and GIS data through integration with external tools such as Pillow, Pandoc, Typst, FFmpeg, GDAL, Calibre, Ghostscript, ImageMagick, and qpdf. Added support for local installation or Docker usage, with commands for single-file conversion and batch processing.",
+        tags: ["Python", "CLI", "Docker", "Conversion"],
+        link: "#"
+      },
+      {
+        title: "Smart Photo Editor",
+        description:
+          "Developed a web-based photo editor using canvas, designed for both desktop and mobile. Implemented canvas layers, edit history, zoom, pan, brush, eraser, shapes, text, fill, eyedropper, pixel selection, crop, filters, and export with selectable area. Integrated a React frontend with Fabric.js and an Express backend, with support for AI editing, multiple providers, visual themes, and ten languages.",
+        tags: ["React", "Express", "Canvas", "Fabric.js"],
+        link: "#"
+      },
+      {
+        title: "Mi Stock",
+        description:
+          "Developed a mobile inventory and stock management application for Android using Flutter. Implemented product creation, editing and deletion with multiple photos, barcode scanning, stock movements, history, sales, shopping cart, PDF/XLS reports, and a dashboard. Integrated SQLite, Riverpod, Material 3, internationalization, and offline visual search using TensorFlow Lite with MobileNet V3 Small.",
+        tags: ["Flutter", "Android", "SQLite", "TensorFlow Lite"],
+        link: "#"
+      },
+      {
+        title: "Download Manager",
+        description:
+          "Developed a desktop application in Python and PySide6 for downloading files from URL lists. Implemented link loading from links.txt or JSON files, manual URL entry, configurable concurrent downloads, pause, resume, retries, and SHA256 verification. Used SQLite for download history, duplicate detection, persistent configuration, and download queue organization.",
+        tags: ["Python", "PySide6", "Desktop", "SQLite"],
+        link: "#"
+      },
+      {
+        title: "CipherChat",
+        description:
+          "Developed an educational prototype of an end-to-end encrypted messaging application. Implemented a React and TypeScript frontend, a Spring Boot 3 backend with Java 21, JWT authentication, PostgreSQL, Flyway, Spring Data JPA, WebSocket/STOMP, and local deployment with Docker Compose. Added support for multiple devices per user, browser-side key generation, local private-key storage in IndexedDB, encrypted per-device message delivery, direct and group chats, identity verification, and encrypted history restoration.",
+        tags: ["React", "Spring Boot", "WebSocket", "Cryptography"],
+        link: "#"
+      },
+      {
+        title: "HomeCinema",
+        description:
+          "Developed a personal LAN media server with a streaming-style interface. Implemented a Spring Boot backend, React and TypeScript frontend, SQLite database, Flyway migrations, TMDb integration, and video playback through HLS using FFmpeg. Added support for local library scanning, catalog search, playback progress tracking, HLS manifest generation, portable Windows mode, and navigation compatible with browsers and Android TV.",
+        tags: ["Spring Boot", "React", "FFmpeg", "HLS"],
+        link: "#"
+      },
+      {
+        title: "DashForge 3D",
+        description:
+          "Developed a 3D obstacle-runner game built in C11 with OpenGL 3.3 Core. Implemented five official levels, a level editor with save/load support, custom levels, export through .dash files, a HUD with progress bar, and three camera modes. Used GLFW, GLAD, cglm, stbimage, stbeasyf ont, CM ake, andN inja, withDebugandReleasebuildsforW indows.",
+        tags: ["C11", "OpenGL", "Game Dev", "3D"],
+        link: "#"
+      },
+      {
+        title: "Rubik's Cube 3D",
+        description:
+          "Developed a 3D Rubik's Cube game in Unity 6. Implemented a 3x3x3 cube with 27 individual cubies, camera rotation with middle mouse, sticker detection through raycasting, and layer turns using click and drag. Developed shuffle functionality with a timer, solve functionality through reverse playback of the move history, and automatic solved-state detection.",
+        tags: ["Unity", "C#", "Game Dev", "3D"],
+        link: "#"
       },
     ],
     footerText: "Available for software development, backend, web, and technical project opportunities.",
@@ -410,9 +541,16 @@ export default function CVWebsite() {
             <article key={project.title} className="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-xl shadow-blue-950/20 backdrop-blur">
               <div className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                 <h3 className="text-xl font-bold text-white">{project.title}</h3>
-                <span className="text-sm text-blue-100/80">{project.period}</span>
+                <span className="rounded-full bg-white/10 px-4 py-2 text-sm text-blue-50">{project.period}</span>
               </div>
               <p className="mb-5 leading-7 text-blue-50/85">{project.description}</p>
+              {project.tags && (
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <Tag key={tag}>{tag}</Tag>
+                  ))}
+                </div>
+              )}
             </article>
           ))}
         </div>
