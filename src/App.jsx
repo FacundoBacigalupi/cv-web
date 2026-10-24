@@ -6,7 +6,7 @@ const content = {
   es: {
     langLabel: "EN",
     cvDownloadLabel: "Descargar CV",
-    cvFile: "cv-facundo-bacigalupi-es.pdf",
+    cvFile: "cv_facundo_bacigalupi_es.pdf",
     nav: [
       { id: "skills", label: "Habilidades" },
       { id: "experience", label: "Experiencia laboral" },
@@ -16,7 +16,7 @@ const content = {
     ],
     heroSubtitle: "Analista en Computación · Estudiante avanzado de Ingeniería en Computación",
     heroText:
-      "Soy Analista en Computación y estudiante avanzado de Ingeniería en Computación en la Universidad de la República. Trabajé año y medio como desarrollador en GEOCOM, principalmente en mantenimiento de sistemas backend, testing automatizado y algo de frontend con Angular. En mi tiempo libre me gusta construir cosas: juegos, herramientas de escritorio, apps web y mobile. También uso IA generativa como apoyo para debugging y aprendizaje, pero siempre revisando y validando los resultados yo mismo.",
+      "Soy Analista en Computación y estudiante avanzado de Ingeniería en Computación en la Universidad de la República. Trabajé año y medio como desarrollador en GEOCOM, principalmente en mantenimiento de sistemas backend, testing automatizado y algo de frontend con Angular. En mi tiempo libre me gusta construir cosas: juegos, herramientas de escritorio, apps web y mobile. También uso IA generativa como apoyo para debugging y aprendizaje.",
     sections: {
       intro: "Introducción",
       skills: "Habilidades",
@@ -64,6 +64,12 @@ const content = {
     ],
     universityProjects: [
       {
+        title: "Seguridad Informática",
+        description:
+          "Laboratorios prácticos de seguridad: ataques man-in-the-middle, criptografía con GPG y OpenSSL, cracking de contraseñas y escalada de privilegios, shell reversa, firewalls con iptables, VPN con OpenVPN y vulnerabilidades web con OWASP WebGoat.",
+        tags: ["Criptografía", "Firewalls", "VPN", "OWASP"],
+      },
+      {
         title: "Bases de Datos",
         period: "03/2025 — 07/2025",
         description:
@@ -91,64 +97,14 @@ const content = {
           "Desarrollo de una aplicación Java con Java SE 8 y Java EE, funcionalidades web con Servlets, JSP y Tomcat, e interfaz de administración en Swing.",
         tags: ["Java", "Java EE", "Servlets", "JSP", "Tomcat", "Swing"],
       },
+      {
+        title: "Proyectos en C/C++",
+        description:
+          "Aplicaciones en C y C++ orientadas a estructuras de datos, algoritmos, programación orientada a objetos, patrones de diseño y programación a mayor escala.",
+        tags: ["C", "C++", "Estructuras de datos", "Patrones de diseño"],
+      },
     ],
     personalProjects: [
-      {
-        title: "Página web CV",
-        description:
-          "Página web personal hecha con React y Vite. Tiene cambio de idioma español/inglés, navegación con scroll suave y diseño responsive. Deployada en GitHub Pages con GitHub Actions.",
-        tags: ["React", "Vite", "Tailwind CSS", "i18n"],
-        link: "https://github.com/FacundoBacigalupi/cv-web",
-      },
-      {
-        title: "Juego Scoundrel en consola",
-        description:
-          "Implementación en Python del juego de cartas solitario Scoundrel. Explorás habitaciones, peleás contra monstruos y usás pociones y armas. Todo desde la consola, con arquitectura modular.",
-        tags: ["Python", "POO", "Arquitectura", "Consola"],
-        link: "https://github.com/FacundoBacigalupi/scoundrel",
-      },
-      {
-        title: "Clear the Dungeon",
-        description:
-          "Juego de cartas single-player en Godot 4 basado en el Scoundrel original. Le agregué cartas de poder, Jokers, layouts alternativos y variantes de reglas. Tiene interfaz gráfica y exportación para Windows.",
-        tags: ["Godot", "GDScript", "Game Dev", "Cartas"],
-        link: "https://github.com/FacundoBacigalupi/clear-the-dungeon",
-      },
-      {
-        title: "uconvert",
-        description:
-          "Herramienta CLI en Python para convertir archivos de todo tipo: imágenes, documentos, PDFs, audio/video, ebooks y datos GIS. Integra herramientas como FFmpeg, Pandoc, Pillow y GDAL. Se puede usar directo o con Docker.",
-        tags: ["Python", "CLI", "Docker", "Conversión"],
-        link: "https://github.com/FacundoBacigalupi/converter",
-      },
-      {
-        title: "Smart Photo Editor",
-        description:
-          "Editor de fotos web basado en canvas para desktop y mobile. Tiene capas, historial de cambios, pinceles, formas, texto, filtros, recorte y exportación. Frontend en React con Fabric.js y backend en Express. Soporta edición con IA.",
-        tags: ["React", "Express", "Canvas", "Fabric.js"],
-        link: "https://github.com/FacundoBacigalupi/smart-photo-editor",
-      },
-      {
-        title: "Sketch",
-        description:
-          "Aplicación web que reconoce dibujos hechos a mano usando una red neuronal CNN entrenada con el dataset Quick, Draw! de Google. Dibujás en un canvas y el modelo te dice qué dibujaste, con las 3 predicciones más probables. Stack: React + FastAPI + PyTorch.",
-        tags: ["Python", "PyTorch", "React", "FastAPI"],
-        link: "https://github.com/FacundoBacigalupi/sketch",
-      },
-      {
-        title: "Mi Stock",
-        description:
-          "App de inventario y stock para Android hecha con Flutter. Permite manejar productos con fotos, escanear códigos de barras, registrar movimientos y ventas, y generar reportes en PDF/XLS. Tiene búsqueda visual offline con TensorFlow Lite.",
-        tags: ["Flutter", "Android", "SQLite", "TensorFlow Lite"],
-        link: "https://github.com/FacundoBacigalupi/my-stock",
-      },
-      {
-        title: "Download Manager",
-        description:
-          "Aplicación desktop en Python con PySide6 para descargar archivos desde listas de URLs. Soporta descargas concurrentes, pausa y reanudación, reintentos y verificación de integridad con SHA256. Historial en SQLite.",
-        tags: ["Python", "PySide6", "Desktop", "SQLite"],
-        link: "https://github.com/FacundoBacigalupi/download-manager",
-      },
       {
         title: "CipherChat",
         description:
@@ -164,11 +120,18 @@ const content = {
         link: "https://github.com/FacundoBacigalupi/home-cinema",
       },
       {
-        title: "DashForge 3D",
+        title: "Smart Photo Editor",
         description:
-          "Juego 3D obstacle-runner hecho en C11 con OpenGL 3.3. Tiene cinco niveles, un editor de niveles con guardado/carga, HUD y tres modos de cámara. Sin motor de juego: solo GLFW, GLAD y cglm.",
-        tags: ["C11", "OpenGL", "Game Dev", "3D"],
-        link: "https://github.com/FacundoBacigalupi/dashforge-3d",
+          "Editor de fotos web basado en canvas para desktop y mobile. Tiene capas, historial de cambios, pinceles, formas, texto, filtros, recorte y exportación. Frontend en React con Fabric.js y backend en Express. Soporta edición con IA.",
+        tags: ["React", "Express", "Canvas", "Fabric.js"],
+        link: "https://github.com/FacundoBacigalupi/smart-photo-editor",
+      },
+      {
+        title: "Mi Stock",
+        description:
+          "App de inventario y stock para Android hecha con Flutter. Permite manejar productos con fotos, escanear códigos de barras, registrar movimientos y ventas, y generar reportes en PDF/XLS. Tiene búsqueda visual offline con TensorFlow Lite.",
+        tags: ["Flutter", "Android", "SQLite", "TensorFlow Lite"],
+        link: "https://github.com/FacundoBacigalupi/my-stock",
       },
       {
         title: "Rubik's Cube 3D con IA",
@@ -177,13 +140,62 @@ const content = {
         tags: ["Unity", "C#", "PyTorch", "Game Dev"],
         link: "https://github.com/FacundoBacigalupi/rubkis-cube",
       },
+      {
+        title: "Sketch",
+        description:
+          "Aplicación web que reconoce dibujos hechos a mano usando una red neuronal CNN entrenada con el dataset Quick, Draw! de Google. Dibujás en un canvas y el modelo te dice qué dibujaste, con las 3 predicciones más probables. Stack: React + FastAPI + PyTorch.",
+        tags: ["Python", "PyTorch", "React", "FastAPI"],
+        link: "https://github.com/FacundoBacigalupi/sketch",
+      },
+      {
+        title: "uconvert",
+        description:
+          "Herramienta CLI en Python para convertir archivos de todo tipo: imágenes, documentos, PDFs, audio/video, ebooks y datos GIS. Integra herramientas como FFmpeg, Pandoc, Pillow y GDAL. Se puede usar directo o con Docker.",
+        tags: ["Python", "CLI", "Docker", "Conversión"],
+        link: "https://github.com/FacundoBacigalupi/converter",
+      },
+      {
+        title: "Download Manager",
+        description:
+          "Aplicación desktop en Python con PySide6 para descargar archivos desde listas de URLs. Soporta descargas concurrentes, pausa y reanudación, reintentos y verificación de integridad con SHA256. Historial en SQLite.",
+        tags: ["Python", "PySide6", "Desktop", "SQLite"],
+        link: "https://github.com/FacundoBacigalupi/download-manager",
+      },
+      {
+        title: "DashForge 3D",
+        description:
+          "Juego 3D obstacle-runner hecho en C11 con OpenGL 3.3. Tiene cinco niveles, un editor de niveles con guardado/carga, HUD y tres modos de cámara. Sin motor de juego: solo GLFW, GLAD y cglm.",
+        tags: ["C11", "OpenGL", "Game Dev", "3D"],
+        link: "https://github.com/FacundoBacigalupi/dashforge-3d",
+      },
+      {
+        title: "Clear the Dungeon",
+        description:
+          "Juego de cartas single-player en Godot 4 basado en el Scoundrel original. Le agregué cartas de poder, Jokers, layouts alternativos y variantes de reglas. Tiene interfaz gráfica y exportación para Windows.",
+        tags: ["Godot", "GDScript", "Game Dev", "Cartas"],
+        link: "https://github.com/FacundoBacigalupi/clear-the-dungeon",
+      },
+      {
+        title: "Juego Scoundrel en consola",
+        description:
+          "Implementación en Python del juego de cartas solitario Scoundrel. Explorás habitaciones, peleás contra monstruos y usás pociones y armas. Todo desde la consola, con arquitectura modular.",
+        tags: ["Python", "POO", "Arquitectura", "Consola"],
+        link: "https://github.com/FacundoBacigalupi/scoundrel",
+      },
+      {
+        title: "Página web CV",
+        description:
+          "Página web personal hecha con React y Vite. Tiene cambio de idioma español/inglés, navegación con scroll suave y diseño responsive. Deployada en GitHub Pages con GitHub Actions.",
+        tags: ["React", "Vite", "Tailwind CSS", "i18n"],
+        link: "https://github.com/FacundoBacigalupi/cv-web",
+      },
     ],
     footerText: "Disponible para oportunidades de desarrollo de software, backend, web y proyectos técnicos.",
   },
   en: {
     langLabel: "ES",
     cvDownloadLabel: "Download CV",
-    cvFile: "cv-facundo-bacigalupi-en.pdf",
+    cvFile: "cv_facundo_bacigalupi_en.pdf",
     nav: [
       { id: "skills", label: "Skills" },
       { id: "experience", label: "Work experience" },
@@ -193,7 +205,7 @@ const content = {
     ],
     heroSubtitle: "Computer Analyst · Advanced Computer Engineering Student",
     heroText:
-      "I'm a Computer Analyst and advanced Computer Engineering student at Universidad de la República. I worked for about a year and a half as a developer at GEOCOM, mainly on backend system maintenance, test automation, and some Angular frontend work. In my free time I like building things: games, desktop tools, web and mobile apps. I also use generative AI to help with debugging and learning, but I always review and validate the results myself.",
+      "I'm a Computer Analyst and advanced Computer Engineering student at Universidad de la República. I worked for about a year and a half as a developer at GEOCOM, mainly on backend system maintenance, test automation, and some Angular frontend work. In my free time I like building things: games, desktop tools, web and mobile apps. I also use generative AI to help with debugging and learning.",
     sections: {
       intro: "Introduction",
       skills: "Skills",
@@ -241,6 +253,12 @@ const content = {
     ],
     universityProjects: [
       {
+        title: "Information Security",
+        description:
+          "Hands-on security labs: man-in-the-middle attacks, cryptography with GPG and OpenSSL, password cracking and privilege escalation, reverse shells, firewalls with iptables, VPNs with OpenVPN, and web vulnerabilities with OWASP WebGoat.",
+        tags: ["Cryptography", "Firewalls", "VPN", "OWASP"],
+      },
+      {
         title: "Databases",
         period: "03/2025 — 07/2025",
         description:
@@ -268,64 +286,14 @@ const content = {
           "Developed a Java application using Java SE 8 and Java EE, with web functionality using Servlets, JSP and Tomcat, plus an administrator interface in Swing.",
         tags: ["Java", "Java EE", "Servlets", "JSP", "Tomcat", "Swing"],
       },
+      {
+        title: "C/C++ Projects",
+        description:
+          "Applications in C and C++ focused on data structures, algorithms, object-oriented programming, design patterns, and large-scale programming concepts.",
+        tags: ["C", "C++", "Data structures", "Design patterns"],
+      },
     ],
     personalProjects: [
-      {
-        title: "CV Website",
-        description:
-          "Personal website built with React and Vite. Has Spanish/English switching, smooth scroll navigation, and responsive design. Deployed on GitHub Pages with GitHub Actions.",
-        tags: ["React", "Vite", "Tailwind CSS", "i18n"],
-        link: "https://github.com/FacundoBacigalupi/cv-web",
-      },
-      {
-        title: "Scoundrel Console Game",
-        description:
-          "Python implementation of the Scoundrel solitaire card game. You explore rooms, fight monsters, and use potions and weapons — all from the console. Modular architecture separating cards, deck, player, and game logic.",
-        tags: ["Python", "OOP", "Architecture", "Console"],
-        link: "https://github.com/FacundoBacigalupi/scoundrel",
-      },
-      {
-        title: "Clear the Dungeon",
-        description:
-          "Single-player card game in Godot 4 based on the original Scoundrel. Added power cards, Jokers, alternative layouts, and rule variants. Has a graphical interface and is exported for Windows.",
-        tags: ["Godot", "GDScript", "Game Dev", "Cards"],
-        link: "https://github.com/FacundoBacigalupi/clear-the-dungeon",
-      },
-      {
-        title: "uconvert",
-        description:
-          "Python CLI tool for converting files of all kinds: images, documents, PDFs, audio/video, ebooks, and GIS data. Integrates tools like FFmpeg, Pandoc, Pillow, and GDAL. Can be used directly or via Docker.",
-        tags: ["Python", "CLI", "Docker", "Conversion"],
-        link: "https://github.com/FacundoBacigalupi/converter",
-      },
-      {
-        title: "Smart Photo Editor",
-        description:
-          "Web-based canvas photo editor for desktop and mobile. Has layers, edit history, brushes, shapes, text, filters, crop, and export. React frontend with Fabric.js and Express backend. Supports AI-powered editing.",
-        tags: ["React", "Express", "Canvas", "Fabric.js"],
-        link: "https://github.com/FacundoBacigalupi/smart-photo-editor",
-      },
-      {
-        title: "Sketch",
-        description:
-          "Web app that recognizes hand-drawn sketches using a CNN trained on Google's Quick, Draw! dataset. You draw on a canvas and the model tells you what you drew, showing the top 3 predictions. Stack: React + FastAPI + PyTorch.",
-        tags: ["Python", "PyTorch", "React", "FastAPI"],
-        link: "https://github.com/FacundoBacigalupi/sketch",
-      },
-      {
-        title: "Mi Stock",
-        description:
-          "Android inventory app built with Flutter. Manage products with photos, scan barcodes, track stock movements and sales, and generate PDF/XLS reports. Has offline visual search powered by TensorFlow Lite.",
-        tags: ["Flutter", "Android", "SQLite", "TensorFlow Lite"],
-        link: "https://github.com/FacundoBacigalupi/my-stock",
-      },
-      {
-        title: "Download Manager",
-        description:
-          "Python desktop app with PySide6 for downloading files from URL lists. Supports concurrent downloads, pause and resume, retries, and SHA256 integrity checks. Download history stored in SQLite.",
-        tags: ["Python", "PySide6", "Desktop", "SQLite"],
-        link: "https://github.com/FacundoBacigalupi/download-manager",
-      },
       {
         title: "CipherChat",
         description:
@@ -341,11 +309,18 @@ const content = {
         link: "https://github.com/FacundoBacigalupi/home-cinema",
       },
       {
-        title: "DashForge 3D",
+        title: "Smart Photo Editor",
         description:
-          "3D obstacle-runner game written in C11 with OpenGL 3.3. Five official levels, a level editor with save/load, a HUD, and three camera modes. No game engine — just GLFW, GLAD, and cglm.",
-        tags: ["C11", "OpenGL", "Game Dev", "3D"],
-        link: "https://github.com/FacundoBacigalupi/dashforge-3d",
+          "Web-based canvas photo editor for desktop and mobile. Has layers, edit history, brushes, shapes, text, filters, crop, and export. React frontend with Fabric.js and Express backend. Supports AI-powered editing.",
+        tags: ["React", "Express", "Canvas", "Fabric.js"],
+        link: "https://github.com/FacundoBacigalupi/smart-photo-editor",
+      },
+      {
+        title: "Mi Stock",
+        description:
+          "Android inventory app built with Flutter. Manage products with photos, scan barcodes, track stock movements and sales, and generate PDF/XLS reports. Has offline visual search powered by TensorFlow Lite.",
+        tags: ["Flutter", "Android", "SQLite", "TensorFlow Lite"],
+        link: "https://github.com/FacundoBacigalupi/my-stock",
       },
       {
         title: "Rubik's Cube 3D with AI",
@@ -353,6 +328,55 @@ const content = {
           "3D Rubik's Cube in Unity 6 with an AI solver. The solver uses beam-search guided by a residual neural network (~9.5M parameters) trained in Python. Solves cubes scrambled up to 25 moves with near-100% success rate.",
         tags: ["Unity", "C#", "PyTorch", "Game Dev"],
         link: "https://github.com/FacundoBacigalupi/rubkis-cube",
+      },
+      {
+        title: "Sketch",
+        description:
+          "Web app that recognizes hand-drawn sketches using a CNN trained on Google's Quick, Draw! dataset. You draw on a canvas and the model tells you what you drew, showing the top 3 predictions. Stack: React + FastAPI + PyTorch.",
+        tags: ["Python", "PyTorch", "React", "FastAPI"],
+        link: "https://github.com/FacundoBacigalupi/sketch",
+      },
+      {
+        title: "uconvert",
+        description:
+          "Python CLI tool for converting files of all kinds: images, documents, PDFs, audio/video, ebooks, and GIS data. Integrates tools like FFmpeg, Pandoc, Pillow, and GDAL. Can be used directly or via Docker.",
+        tags: ["Python", "CLI", "Docker", "Conversion"],
+        link: "https://github.com/FacundoBacigalupi/converter",
+      },
+      {
+        title: "Download Manager",
+        description:
+          "Python desktop app with PySide6 for downloading files from URL lists. Supports concurrent downloads, pause and resume, retries, and SHA256 integrity checks. Download history stored in SQLite.",
+        tags: ["Python", "PySide6", "Desktop", "SQLite"],
+        link: "https://github.com/FacundoBacigalupi/download-manager",
+      },
+      {
+        title: "DashForge 3D",
+        description:
+          "3D obstacle-runner game written in C11 with OpenGL 3.3. Five official levels, a level editor with save/load, a HUD, and three camera modes. No game engine — just GLFW, GLAD, and cglm.",
+        tags: ["C11", "OpenGL", "Game Dev", "3D"],
+        link: "https://github.com/FacundoBacigalupi/dashforge-3d",
+      },
+      {
+        title: "Clear the Dungeon",
+        description:
+          "Single-player card game in Godot 4 based on the original Scoundrel. Added power cards, Jokers, alternative layouts, and rule variants. Has a graphical interface and is exported for Windows.",
+        tags: ["Godot", "GDScript", "Game Dev", "Cards"],
+        link: "https://github.com/FacundoBacigalupi/clear-the-dungeon",
+      },
+      {
+        title: "Scoundrel Console Game",
+        description:
+          "Python implementation of the Scoundrel solitaire card game. You explore rooms, fight monsters, and use potions and weapons — all from the console. Modular architecture separating cards, deck, player, and game logic.",
+        tags: ["Python", "OOP", "Architecture", "Console"],
+        link: "https://github.com/FacundoBacigalupi/scoundrel",
+      },
+      {
+        title: "CV Website",
+        description:
+          "Personal website built with React and Vite. Has Spanish/English switching, smooth scroll navigation, and responsive design. Deployed on GitHub Pages with GitHub Actions.",
+        tags: ["React", "Vite", "Tailwind CSS", "i18n"],
+        link: "https://github.com/FacundoBacigalupi/cv-web",
       },
     ],
     footerText: "Available for software development, backend, web, and technical project opportunities.",
